@@ -1,0 +1,5 @@
+vllm==0.18.0
+qwen-vl-utils==0.0.14
+huggingface-hub[cli]==0.34.0
+requests==2.32.3
+pillow==12.2.0

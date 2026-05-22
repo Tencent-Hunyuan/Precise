@@ -1,0 +1,24 @@
+# Direct pip-compatible mirror of pyproject.toml for the GenEval server.
+# Prefer bootstrap.sh for the full setup because
+# it clones and patches the local MMDetection checkout before installing.
+--extra-index-url https://download.pytorch.org/whl/cu121
+--find-links https://download.openmmlab.com/mmcv/dist/cu121/torch2.1.0/index.html
+
+setuptools<82
+gunicorn==23.0.0
+flask==3.1.0
+huggingface-hub==0.34.0
+open-clip-torch==2.31.0
+clip-benchmark==1.6.1
+numpy==1.26.0
+opencv-python-headless==4.11.0.86
+pillow==12.2.0
+requests==2.32.3
+torch==2.1.2+cu121
+torchvision==0.16.2+cu121
+transformers==4.40.0
+mmengine==0.10.7
+mmcv-full==1.7.2
+
+# Run from this directory after bootstrap.sh has created ./mmdetection.
+-e ./mmdetection

@@ -1,0 +1,31 @@
+# Direct pip-compatible mirror of pyproject.toml.
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+torch==2.6.0
+torchvision==0.21.0
+transformers==4.56.0
+accelerate==1.4.0
+diffusers==0.37.1
+
+numpy==1.26.4
+pillow==12.2.0
+
+tqdm==4.67.1
+wandb==0.18.7
+requests==2.32.3
+
+peft==0.17.0
+bitsandbytes==0.45.3; sys_platform != 'darwin' or platform_machine != 'arm64'
+
+huggingface-hub==0.34.0
+datasets==3.3.2
+tokenizers==0.22.0
+
+absl-py
+ml_collections
+sentencepiece
+setuptools>=61,<82
+openai
+image-reward
+openai-clip
+open-clip-torch>=2.26.1

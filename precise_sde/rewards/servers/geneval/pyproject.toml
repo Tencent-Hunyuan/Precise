@@ -1,0 +1,45 @@
+[project]
+name = "reward-server"
+version = "0.0.0"
+requires-python = "==3.10.16"
+dependencies = [
+  "setuptools<82",
+  "gunicorn==23.0.0",
+  "flask==3.1.0",
+  "huggingface-hub==0.34.0",
+  "open-clip-torch==2.31.0",
+  "clip-benchmark==1.6.1",
+  "numpy==1.26.0",
+  "opencv-python-headless==4.11.0.86",
+  "pillow==12.2.0",
+  "requests==2.32.3",
+  "torch==2.1.2+cu121",
+  "torchvision==0.16.2+cu121",
+  "transformers==4.40.0",
+  "mmengine==0.10.7",
+  "mmcv-full==1.7.2",
+  "mmdet",
+]
+
+[tool.uv]
+package = false
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu121" }
+torchvision = { index = "pytorch-cu121" }
+mmdet = { path = "./mmdetection", editable = true }
+mmcv-full = { index = "openmmlab-mmcv-cu121-torch2.1.0" }
+
+[[tool.uv.index]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+explicit = true
+
+[[tool.uv.index]]
+name = "openmmlab-mmcv-cu121-torch2.1.0"
+url = "https://download.openmmlab.com/mmcv/dist/cu121/torch2.1.0/index.html"
+format = "flat"
+explicit = true
+
+[tool.uv.extra-build-dependencies]
+mmdet = ["torch==2.1.2+cu121", "numpy==1.26.0", "setuptools<82"]

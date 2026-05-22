@@ -1,0 +1,53 @@
+# OS/editor metadata
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.venv/
+venv/
+env/
+ENV/
+__pypackages__/
+*.egg-info/
+
+# Build and packaging outputs
+build/
+dist/
+sdist/
+wheels/
+*.egg
+MANIFEST
+
+# Experiment outputs and downloaded artifacts
+checkpoints/
+logs/
+wandb/
+debug/
+notebooks/
+model/
+
+# Generated reward-server dependencies and weights
+precise_sde/rewards/servers/geneval/.venv/
+precise_sde/rewards/servers/geneval/.bootstrap-state
+precise_sde/rewards/servers/geneval/mmdetection/
+precise_sde/rewards/servers/geneval/model/
+precise_sde/rewards/servers/unified_reward/model/
+
+# Tooling sidecars
+.claude/
+CLAUDE.md
