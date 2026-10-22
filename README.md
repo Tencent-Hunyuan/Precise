@@ -35,7 +35,7 @@ Jade Zou<sup>1,2,*,&ddagger;</sup>,
 
 ## News
 - [2026/09/26] 🎉 Precise is accepted to [NIPS 2026](https://neurips.cc/Conferences/2026).
-- Code for Precise-SDE is available in this repository, including the Precise sampler, FLUX.2 Klein training entrypoint, evaluation scripts, and reward server integrations.
+- Code for Precise-SDE is available in this repository, including the Precise sampler, FLUX.2 Klein training entrypoint, evaluation scripts, and reward server integrations. SD3 training and evaluation scripts is on the way.
 
 ## Table of Contents
 
